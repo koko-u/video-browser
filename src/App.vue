@@ -1,16 +1,19 @@
 <template>
-  <div>
+  <div class="container">
     <SearchBar />
+    <VideoList />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import SearchBar from "@/components/SearchBar.vue";
+import VideoList from "@/components/VideoList.vue";
 
 export default defineComponent({
   name: "App",
   components: {
+    VideoList,
     SearchBar
   },
   props: {},
@@ -21,4 +24,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap";
 </style>
