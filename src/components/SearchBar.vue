@@ -1,18 +1,14 @@
 <template>
   <div>
-    <SearchBar />
+    <input type="text" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import SearchBar from "@/components/SearchBar.vue";
 
 export default defineComponent({
-  name: "App",
-  components: {
-    SearchBar
-  },
+  name: "SearchBar",
   props: {},
   setup(props, context) {
     return {};
@@ -20,5 +16,5 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 </style>
