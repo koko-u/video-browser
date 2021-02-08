@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <SearchBar />
-    <VideoList />
+    <div class="row">
+      <VideoDetail />
+      <VideoList />
+    </div>
   </div>
 </template>
 
@@ -9,10 +12,12 @@
 import { defineComponent } from "vue";
 import SearchBar from "@/components/SearchBar.vue";
 import VideoList from "@/components/VideoList.vue";
+import VideoDetail from "@/components/VideoDetail.vue";
 
 export default defineComponent({
   name: "App",
   components: {
+    VideoDetail,
     VideoList,
     SearchBar
   },
